@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/download.jpg">
+    <title>Whatsapp chat web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="nav-bar">
+           <form method="GET"action="/chats/new">
+           <button style="border-radius: 8px;margin: 0.5rem;"> New chat</button>
+           </form>
+            <h2 style="text-align: center; color: #94ecf7;margin-right: 45%;">Whatsapp Chat Web</h2>
+        </div>
+        
+    </div>
+    <br><br><br>
+    <div>
+       <h2 style="text-align: center; color: #94ecf7;margin-top: 60px;text-decoration: underline;">All Chats</h2>
+    </div>
+    <div class="chat-content">
+    <% for(let chat of chats) { %>
+        <div class="chat">
+            <div class="chat-meta">
+                <span><b>From:</b> <%= chat.from %></span>
+                <span><b>To:</b> <%= chat.to %></span>
+            </div>
+            <div class="msg">
+                <%= chat.msg %>
+            </div>
+            <div class="chat-meta">
+                <span><%= chat.created_at.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) %></span>
+                <span><%= chat.created_at.toLocaleDateString() %></span>
+            </div>
+            <div style="margin-top:10px;">
+                <form method="GET" action="/chats/<%= chat._id %>/edit" style="display:inline;">
+                    <button>Edit</button>
+                </form>
+                <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE" style="display:inline;">
+                    <button>Delete</button>
+                </form>
+            </div>
+        </div>
+    <% } %>
+</div>
+</body>
+</html>
