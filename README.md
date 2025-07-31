@@ -2,6 +2,7 @@
 A simple, server-rendered chat application built using MongoDB, Express.js, and Node.js, with EJS for templating.
 
 📁 Project Structure:
+
 .
 ├── index.js                # Main server file
 ├── init.js                 # Script to seed initial chat data
@@ -20,6 +21,7 @@ A simple, server-rendered chat application built using MongoDB, Express.js, and 
 └── README.md               # Documentation
 
 🚀 Getting Started:
+
 1.Clone the repository: 
   git clone <repository-url>
 2.Navigate to the project folder:
@@ -29,6 +31,7 @@ A simple, server-rendered chat application built using MongoDB, Express.js, and 
 4.(Optional) Seed the database with initial data:
    node init.js
 
+
 ▶️ Running the Server:
    node index.js
 🛠️ Technologies Used
@@ -37,4 +40,7 @@ A simple, server-rendered chat application built using MongoDB, Express.js, and 
    . MongoDB with Mongoose
    . EJS Templating
    . HTML5 & CSS3
-  
+
+License:
+
+This project is open source under the MIT License. """
