@@ -68,30 +68,51 @@ with all data stored securely in **MongoDB Atlas**.
 
 ## 📂 Project Structure
 MERN-chat/
+
 │── public/ # Static assets (CSS, images)
+
 │── routes/ # Route handlers
+
 │ ├── auth.route.js
+
 │ └── chat.route.js
+
 │── controllers/ # Controller logic
+
 │── models/ # Mongoose models (User, Chat)
+
 │── views/ # EJS templates (login, signup, chats, etc.)
+
 │── seed.js # Script to seed DB with sample data
+
 │── server.js # Main server file
+
 │── .env # Environment variables (ignored in git)
+
 │── .gitignore
+
 │── README.md
+
+
 
 Install dependencies:
 npm install
-3️⃣ Setup environment variables:
+
+Setup environment variables:
+
 .env->
+
 MONGO_URI=your_mongodb_atlas_connection_string
+
 SESSION_SECRET=your_secret_key
+
 PORT=3000
+
 
 Seed the database (optional - for testing):
 node seed.js
 
 Run the server:
+
 node src/app.js
 
