@@ -98,7 +98,7 @@ MERN-chat/
 # Install dependencies:
 npm install
 
-#Setup environment variables:
+# Setup environment variables:
 
 .env->
 
@@ -109,7 +109,7 @@ SESSION_SECRET=your_secret_key
 PORT=3000
 
 
-#Seed the database (optional - for testing):
+# Seed the database (optional - for testing):
 node seed.js
 
 Run the server:
