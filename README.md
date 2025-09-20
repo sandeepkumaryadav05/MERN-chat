@@ -122,6 +122,7 @@ MERN-chat/
    cd MERN-chat
 
 2.**Install dependencies**:
+   ```
    npm install
 
 3.**Setup environment variables**:
