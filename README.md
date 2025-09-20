@@ -125,14 +125,17 @@ MERN-chat/
    npm install
 
 3.**Setup environment variables**:
-    MONGO_URI=your_mongodb_atlas_connection_string
-    SESSION_SECRET=your_secret_key
-    PORT=3000
-
+   ```
+   MONGO_URI=your_mongodb_atlas_connection_string
+   SESSION_SECRET=your_secret_key
+   PORT=3000
+   ```
 4.**Seed the database (optional)**
+    
     node init.js
 
 5.**Run the server**
+
     nodemon src/app.js
 
    
