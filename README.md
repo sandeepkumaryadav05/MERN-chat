@@ -124,7 +124,7 @@ MERN-chat/
 2.**Install dependencies**:
    ```
    npm install
-
+   ```
 3.**Setup environment variables**:
    ```
    MONGO_URI=your_mongodb_atlas_connection_string
