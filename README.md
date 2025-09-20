@@ -42,10 +42,12 @@ It allows users to **sign up, log in, send messages, edit messages, and log out*
 ## 🖼 Screenshots  
 
 ### 🔐 Login Page  
-     <img width="1245" height="723" alt="image" src="https://github.com/user-attachments/assets/bbd4689e-b5ff-43f3-973b-93cd332bbc8d" />
+<img width="1245" height="723" alt="Screenshot 2025-09-20 205215" src="https://github.com/user-attachments/assets/a5591951-d6cd-4db5-a16f-51ec2234936f" />
+
 
 ### 💬 Chat Dashboard  
-    <img width="1900" height="872" alt="image" src="https://github.com/user-attachments/assets/788ade8a-800e-41e7-ab42-37458030620c" />
+<img width="1900" height="872" alt="Screenshot 2025-09-20 205242" src="https://github.com/user-attachments/assets/6b4d7a19-9557-470d-bb5b-bec56e9dc295" />
+
 
 
 
