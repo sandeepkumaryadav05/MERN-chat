@@ -28,7 +28,7 @@ It allows users to **sign up, log in, send messages, edit messages, and log out*
 - Dedicated pages: Login, Signup, New Chat, Edit Chat, Chat List  
 
 ### 🛠 Extra Functionality  
-- **Seed Script (`seed.js`)** → Populate DB with sample users & messages  
+- **Seed Script (`init.js`)** → Populate DB with sample users & messages  
 - **Method Override** → Enables PUT/DELETE requests in forms  
 - **Environment Variables (.env)** → MongoDB Atlas URI, Session Secret  
 - **Error Handling** → Graceful error messages when chat/user not found  
@@ -42,10 +42,12 @@ It allows users to **sign up, log in, send messages, edit messages, and log out*
 ## 🖼 Screenshots  
 
 ### 🔐 Login Page  
-![Login Page](./b54ec458-4b25-4847-a854-ca3d49ead6b3.png)  
+     <img width="1245" height="723" alt="image" src="https://github.com/user-attachments/assets/bbd4689e-b5ff-43f3-973b-93cd332bbc8d" />
 
 ### 💬 Chat Dashboard  
-![Chat Dashboard](./e557e30f-5b3c-4bfd-b6be-a66b536b00ba.png)  
+    <img width="1900" height="872" alt="image" src="https://github.com/user-attachments/assets/788ade8a-800e-41e7-ab42-37458030620c" />
+
+
 
 ---
 
@@ -95,7 +97,7 @@ MERN-chat/
 
 │── views/ # EJS templates (login, signup, chats, etc.)
 
-│── seed.js # Script to seed DB with sample data
+│── init.js # Script to seed DB with sample data
 
 │── server.js # Main server file
 
@@ -107,24 +109,30 @@ MERN-chat/
 
 
 
-## Install dependencies:
-npm install
 
-## Setup environment variables:
+---
 
-.env->
+## ⚙️ Installation & Setup  
 
-MONGO_URI=your_mongodb_atlas_connection_string
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/yourusername/MERN-chat.git
+   cd MERN-chat
 
-SESSION_SECRET=your_secret_key
+2.**Install dependencies**:
+   npm install
 
-PORT=3000
+3.**Setup environment variables**:
+    MONGO_URI=your_mongodb_atlas_connection_string
+    SESSION_SECRET=your_secret_key
+    PORT=3000
 
+4.**Seed the database (optional)**
+    node init.js
 
-## Seed the database (optional - for testing):
-node seed.js
+5.**Run the server**
+    nodemon src/app.js
 
-## Run the server:
+   
 
-node src/app.js
 
